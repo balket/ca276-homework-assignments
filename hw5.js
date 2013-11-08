@@ -20,12 +20,43 @@
 // </dl>
 
 // You'll have to use document.createElement() for each HTML element (i.e. tag).
+
+
+
+
 // You'll have to use document.createTextNode() for anything that is just text.
 // When you have your DOM nodes ready, call document.body.appendChild() to append
 // to the end of the body element.
 
 // Feel free to replace "Some word" and "Some definition" with text of your 
-// choosing. If you need ideas check out http://wordsmith.org/words/random.cgi
+// choosing. If you need ideas check out http://wordsmith.org/words/random.cgidocument.getElementById('w3cExample').onclick = function() {
+        var master, art, definition, textNode, container;
+
+        text = 'what is javascript?';
+        
+        textNode = document.createTextNode(text);
+        
+
+     
+       
+         master = document.createElement('dl');
+        master.setAttribute('id', 'master');
+        master.setAttribute('style', 'display: block;');
+
+        document.body.appendChild(master);
+
+      
+       art = document.createElement('dl');
+       artl.setAttribute('id', 'art');
+       art.setAttribute('style', 'display: block;');
+
+       art.appendChild(textNode);
+
+      var dd = document.createElement('dd');
+      dd.appendChild( documnent.createTextNode('JavaScript is a programming language') );
+     
+        document.body.appendChild(art);
+};
 
 
 // Problem 2
